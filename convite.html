@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Jornadas de Engenharia e Gestão Industrial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .flyer {
+      background: #fff;
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header img {
+      max-width: 250px;
+      margin-bottom: 10px;
+    }
+    .header .title {
+      font-size: 28px;
+      color: #0056b3;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .header .subtitle {
+      font-size: 18px;
+      color: #555;
+    }
+    .intro {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .details {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .timeline {
+      position: relative;
+      margin: 40px 0;
+      padding: 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #0056b3;
+    }
+    .timeline-item {
+      position: relative;
+      margin-left: 60px;
+      margin-bottom: 40px;
+    }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: #0056b3;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+    .timeline-item .time {
+      font-size: 14px;
+      font-weight: bold;
+      color: #0056b3;
+      margin-bottom: 5px;
+    }
+    .timeline-item .event {
+      background: #e8f0fe;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .timeline-item .event h3 {
+      margin: 0 0 5px;
+      font-size: 18px;
+      color: #333;
+    }
+    .timeline-item .event p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta a {
+      background: #0056b3;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #003d82;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+    <div class="header">
+      <img src="https://th.bing.com/th/id/R.73ba76b556c540bab64e48bfa3d1eb51?rik=%2fxGfj5KFLAY%2fsg&riu=http%3a%2f%2feduroam.upt.pt%2fimages%2flogo_upt.png&ehk=e6Z92FnPU736ql4vQ%2fJdJlzrpMeb65QvIQJ%2bPEW35ec%3d&risl=&pid=ImgRaw&r=0" alt="Logotipo Universidade Portucalense">
+      <div class="title">Jornadas de Engenharia e Gestão Industrial</div>
+      <div class="subtitle">Universidade Portucalense</div>
+    </div>
+    <div class="intro">
+      <p>Não percas esta oportunidade de conhecer soluções inovadoras da atualidade e de conversar com antigos alunos de EGI para esclarecer todas as tuas dúvidas!</p>
+    </div>
+    <div class="details">
+      <p><strong>Data:</strong> 25 de março, das 14:00 às 17:30</p>
+      <p><strong>Local:</strong> Sala 311, Universidade Portucalense</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">14:00 – 14:20</div>
+        <div class="event">
+          <h3>Sessão de Abertura</h3>
+          <p>Boas-vindas e introdução ao evento.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">14:20 – 15:20</div>
+        <div class="event">
+          <h3>Palestra da 4Lean</h3>
+          <p>Descubra as soluções inovadoras que estão a transformar a indústria digital.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">15:30 – 16:00</div>
+        <div class="event">
+          <h3>Tese de Mestrado</h3>
+          <p>Um trabalho de investigação na área de Digital Twins que promete supreender.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">16:00 – 16:30</div>
+        <div class="event">
+          <h3>Coffee Break</h3>
+          <p>Momento de networking e refresh para continuar o evento.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">16:30 – 17:30</div>
+        <div class="event">
+          <h3>Mesa Redonda</h3>
+          <p>Participe numa conversa aberta com antigos alunos de Engenharia e Gestão Industrial e conheça as suas experiências académicas e profissionais.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cta">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrIsHmaLFCeSMSeWBXJ2tCE7GiDjSId2bcw4zrAx2EPb8BtQ/viewform?usp=header" target="_blank">Confirmar Presença</a>
+    </div>
+    <div class="footer">
+      Universidade Portucalense - Conectando conhecimento e inovação
+    </div>
+  </div>
+</body>
+</html>
