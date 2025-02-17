@@ -13,7 +13,6 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      position: relative;
     }
     .flyer {
       background: #fff;
@@ -22,32 +21,18 @@
       padding: 30px;
       border-radius: 8px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      position: relative;
     }
     .header {
       text-align: center;
       margin-bottom: 20px;
     }
-    .header img {
-      max-width: 250px;
-      margin-bottom: 10px;
-    }
     .header .title {
       font-size: 28px;
       color: #0056b3;
       font-weight: bold;
-      margin-bottom: 5px;
     }
-    .header .subtitle {
-      font-size: 18px;
-      color: #555;
-    }
-    .intro {
-      text-align: center;
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 20px;
-    }
-    .details {
+    .intro, .details {
       text-align: center;
       font-size: 16px;
       color: #333;
@@ -71,9 +56,6 @@
       position: relative;
       margin-left: 60px;
       margin-bottom: 40px;
-    }
-    .timeline-item:last-child {
-      margin-bottom: 0;
     }
     .timeline-item::before {
       content: '';
@@ -108,18 +90,37 @@
       font-size: 14px;
       color: #555;
     }
+    .logos-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+    }
+    .logos-container img {
+      max-width: 140px;
+      height: auto;
+    }
     .cta {
       text-align: center;
-      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
     }
     .cta a {
       background: #0056b3;
       color: #fff;
-      padding: 12px 25px;
+      padding: 12px 20px;
       text-decoration: none;
       border-radius: 5px;
-      font-size: 18px;
+      font-size: 16px;
       transition: background 0.3s;
+      display: inline-block;
+      white-space: nowrap;
+      margin-top: 10px;
     }
     .cta a:hover {
       background: #003d82;
@@ -129,28 +130,13 @@
       margin-top: 25px;
       font-size: 12px;
       color: #777;
-      border-top: 1px solid #ccc;
-      padding-top: 10px;
-    }
-    /* Imagens posicionadas fora do retângulo branco com tamanho reduzido */
-    .logo-left, .logo-right {
-      position: absolute;
-      bottom: 20px;
-      z-index: 10;
-      max-width: 250px;  /* Tamanho reduzido */
-    }
-    .logo-left {
-      left: 20px;
-    }
-    .logo-right {
-      right: 20px;
     }
   </style>
 </head>
 <body>
   <div class="flyer">
     <div class="header">
-            <div class="title">Jornadas de Engenharia e Gestão Industrial</div>
+      <div class="title">Jornadas de Engenharia e Gestão Industrial</div>
     </div>
     <div class="intro">
       <p>Não percas esta oportunidade de conhecer soluções inovadoras da atualidade e aproveita a oportunidade exclusiva de networking com antigos estudantes de EGI!</p>
@@ -178,7 +164,7 @@
         <div class="time">15:30 – 16:00</div>
         <div class="event">
           <h3>Apresentação de uma Tese de Mestrado</h3>
-          <p>Um trabalho de investigação na área de Digital Twins que promete supreender.</p>
+          <p>Um trabalho de investigação na área de Digital Twins que promete surpreender.</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -192,20 +178,23 @@
         <div class="time">16:30 – 17:30</div>
         <div class="event">
           <h3>Mesa Redonda</h3>
-          <p>Participa numa conversa aberta com antigos estudantes de Engenharia e Gestão Industrial e conheçe as suas experiências académicas e profissionais.</p>
+          <p>Participa numa conversa aberta com antigos estudantes de Engenharia e Gestão Industrial e conhece as suas experiências académicas e profissionais.</p>
         </div>
       </div>
     </div>
+    
     <div class="cta">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrIsHmaLFCeSMSeWBXJ2tCE7GiDjSId2bcw4zrAx2EPb8BtQ/viewform?usp=header" target="_blank">Confirmar Presença</a>
     </div>
+
     <div class="footer">
-      Do conhecimento à prática
+      <div class="logos-container">
+        <img src="https://www.upt.pt/wp-content/uploads/2022/12/LOGO_DCT_690X271.png" alt="Logo DCT">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrIsHmaLFCeSMSeWBXJ2tCE7GiDjSId2bcw4zrAx2EPb8BtQ/viewform?usp=header">
+          <img src="https://appm.pt/wp-content/uploads/2024/06/%E2%81%AEPPM-logo-Universidade-Portucalense-1024x311.png" alt="Logo PPM">
+        </a>
+      </div>
     </div>
   </div>
-
-  <!-- Imagens posicionadas fora do retângulo branco com tamanho reduzido -->
-  <img src="https://www.upt.pt/wp-content/uploads/2022/12/LOGO_DCT_690X271.png" alt="Logo DCT" class="logo-left">
-  <img src="https://appm.pt/wp-content/uploads/2024/06/%E2%81%AEPPM-logo-Universidade-Portucalense-1024x311.png" alt="Logo PPM" class="logo-right">
 </body>
 </html>
